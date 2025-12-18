@@ -1,4 +1,28 @@
-        <li><a href="#contact">Contact</a></li>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emma Cassel | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="profile">
+      <img src="https://pin.it/4XIo0hDNi" alt="https://pin.it/4XIo0hDNi" class="avatar"/>
+      <h1>Emma Cassel</h1>
+      <p class="subtitle">Portfolio Personnel</p>
+      <p class="intro">Je m'appelle Emma Cassel, j'ai 19 ans. </p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#experience">Expériences</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#cv">CV</a></li>
+<li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -19,7 +43,33 @@ Que ce soit à travers la peinture, le dessin ou la sculpture, j’aime explorer
         <li>
           <strong>Stage en entreprise</strong> – 2024<br>
           <span class="desc">Découverte du monde professionnel, collaboration et apprentissage.J’ai effectué mon tout premier stage dans une école lorsque j’étais en classe de seconde. Cette première expérience m’a beaucoup marquée : elle m’a permis de découvrir le fonctionnement du milieu scolaire de l’intérieur et de confirmer mon intérêt pour ce domaine. Aujourd’hui, en études supérieures, j’ai la chance de pouvoir faire des stages tout au long de l’année. Cela me permet d’acquérir de l’expérience, de développer mes compétences et de mieux comprendre la réalité du métier que je souhaite exercer plus tard.</span>
-                  <!-- Ajoute des projets ici -->
+        </li>
+        <!-- Ajoute tes autres expériences ici ! -->
+      </ul>
+    </section>
+    <section id="skills">
+    <h2>competences </h2>
+      <ul>
+        <li>Je suis une personne motivée et curieuse, toujours prête à apprendre et à m’investir dans ce que j’entreprends. J’ai le sens de l’organisation et je sais gérer mes priorités pour mener à bien les tâches qui me sont confiées. Doté(e) d’un bon esprit d’analyse, je suis capable de comprendre rapidement une situation et de trouver des solutions adaptées.
+
+J’apprécie le travail en équipe et je sais communiquer clairement avec les autres, tout en restant à l’écoute. Je peux également travailler en autonomie lorsque cela est nécessaire. Ma capacité d’adaptation me permet de faire face aux imprévus et de m’ajuster facilement à de nouveaux environnements ou outils.</li>
+        <li></li>
+        <li></li>
+        <!--
+      </ul>
+    </section>
+            <section id="portfolio">
+      <h2>Portfolio / Projets</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Projet 1</h3>
+          <p>Description rapide du projet.</p>
+        </div>
+        <div class="card">
+          <h3>Projet 2</h3>
+          <p>Description rapide du projet.</p>
+        </div>
+        <!-- Ajoute des projets ici -->
       </div>
     </section>
     <section id="cv">
@@ -47,7 +97,7 @@ Que ce soit à travers la peinture, le dessin ou la sculpture, j’aime explorer
   </footer>
   <script src="scripts.js"></script>
 </body>
-</html>
+</html>            
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -67,7 +117,89 @@ Que ce soit à travers la peinture, le dessin ou la sculpture, j’aime explorer
 
     <section class="intro">
         <h2>Ambiance de tous les jours </h2>
-                    backface-visibility: hidden;
+        <p>
+            Voici les sons qui me suivent partout !!
+        </p>
+    </section>
+
+    <section class="music-list">
+        <div class="music-card">
+            <h3>📻 Artiste 1</h3>
+            <p>hier encore : <strong>charles aznavour</strong></p>
+            <a href="#" target="_blank">Écouter </a>
+        </div>
+
+        <div class="music-card">
+            <h3>📼 Artiste 2</h3>
+            <p> cesar : <strong>dali</strong></p>
+            <a href="#" target="_blank">Écouter   </a>
+        </div>
+
+        <div class="music-card">
+            <h3>🎙️ Artiste 3</h3>          
+<p>dark red : <strong>steve lacy</strong></p>
+            <a href="#" target="_blank">Écouter</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>🌫️ Entre musique & brouillard 🌫️</p>
+    </footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connais-tu mes aliments préférés !!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 100px);
+            gap: 10px;
+            justify-content: center;
+        }
+        .card {
+            width: 100px;
+            height: 100px;
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: center;
+                    align-items: center;
+            font-weight: bold;
+            font-size: 16px;
+            border-radius: 10px;
+            cursor: pointer;
+            position: relative;
+            perspective: 1000px;
+        }
+        .card-inner {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s; 
+                transform-style: preserve-3d;
+        }
+        .card.flipped .card-inner {
+            transform: rotateY(180deg);
+        }
+        .card-front, .card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -94,71 +226,20 @@ Que ce soit à travers la peinture, le dessin ou la sculpture, j’aime explorer
     <div id="message"></div>
 
     <script>
-        const aliments = ["Fraise", "Nutella", "Saumon", "Jus d'orange", "Poire", "Clémentine"];
-        let cardsArray = [...aliments, ...aliments]; // On double pour les paires
-        let firstCard = null;
-        let secondCard = null;
-        let lockBoard = false;
-        let matchedPairs = 0;
+            card.addEventListener('click', flipCard);
 
-        function shuffle(array) {
-            for (let i = array.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [array[i], array[j]] = [array[j], array[i]];
-            }
-        }
+            grid.appendChild(card);
+        });
 
-        shuffle(cardsArray);
+        function flipCard() {
+            if (lockBoard) return;
+            if (this === firstCard) return;
 
-        const grid = document.getElementById('gameGrid');
+            this.classList.add('flipped');
 
-        cardsArray.forEach((aliment) => {
-            const card = document.createElement('div');
-            card.className = 'card';
-            card.dataset.aliment = aliment;
-          <body>
-
-    <h1 class="titre-ancien"></h1>
-    <h2 class="sous-titre-ancien"</h2>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connais-tu mes aliments préférés !!</title>
-
-    <!-- Déclaration de la police Ocean Delight -->
-    <style>
-        @font-face {
-            font-family: 'Ocean Delight';
-            src: url('fonts/OceanDelight.woff2') format('woff2'),
-                 url('fonts/OceanDelight.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        /* Appliquer la police à tout le site */
-        body {
-            font-family: 'Ocean Delight', cursive, sans-serif;
-            background-color: #fdf6e3; /* couleur papier ancien */
-            color: #333333;
-            text-align: center;
-            padding-top: 50px;
-        }
-
-        /* Styles titre et sous-titre */
-        h1 {
-            font-size: 60px;
-            margin-bottom: 10px;
-        }
-
-        h2 {
-            font-size: 28px;
-            font-style: italic;
-                          return;
+            if (!firstCard) {
+                firstCard = this;
+                return;
             }
 
             secondCard = this;
@@ -178,18 +259,5 @@ Que ce soit à travers la peinture, le dessin ou la sculpture, j’aime explorer
                 }
             } else {
                 setTimeout(() => {
-                    firstCard.classList.remove('flipped');
-                    secondCard.classList.remove('flipped');
-                    resetBoard();
-                }, 1000);
-            }
-        }
-
-        function resetBoard() {
-            [firstCard, secondCard, lockBoard] = [null, null, false];
-        }
-    </script>
-
-</body>
-</html>
-          
+                    firstCard.classList.remove('flipped'); 
+                        
