@@ -1,0 +1,195 @@
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="about">
+      <h2>
+        À propos de moi</h2>
+      <p> Je suis née le 27 octobre 2006. je suis en deuxième année en sicence de l'éducation à l'ileps à cergyJe suis passionnée par l’art depuis toujours. J’aime peindre, dessiner et sculpter, des activités qui me permettent d’exprimer mes émotions et de donner vie à mes idées. Créer, pour moi, c’est une façon de raconter des histoires sans mots, de capturer des instants ou des sensations que les images traduisent mieux que les phrases.
+
+Que ce soit à travers la peinture, le dessin ou la sculpture, j’aime explorer différentes techniques et matières, expérimenter, chercher de nouvelles formes d’expression. L’art occupe une place essentielle dans ma vie<br>
+         
+      </p>
+    </section>
+    <section id="experience">
+      <h2>Expériences</h2>
+      <ul> J'ai eu mon baccalauréat en 2024 en France, une étape marquante dans mon parcours scolaire, et plus particulièrement dans mes spécialités, l'Art et HLP (Humanités, Littérature et Philosophie). Cette année-là, les épreuves étaient particulièrement intenses, mais j'ai su garder ma concentration et mes objectifs en tête.
+        j'ai déja fais de nombreux stages auprès de professeurs des écoles.
+        <li>
+          <strong>Stage en entreprise</strong> – 2024<br>
+          <span class="desc">Découverte du monde professionnel, collaboration et apprentissage.J’ai effectué mon tout premier stage dans une école lorsque j’étais en classe de seconde. Cette première expérience m’a beaucoup marquée : elle m’a permis de découvrir le fonctionnement du milieu scolaire de l’intérieur et de confirmer mon intérêt pour ce domaine. Aujourd’hui, en études supérieures, j’ai la chance de pouvoir faire des stages tout au long de l’année. Cela me permet d’acquérir de l’expérience, de développer mes compétences et de mieux comprendre la réalité du métier que je souhaite exercer plus tard.</span>
+                  <!-- Ajoute des projets ici -->
+      </div>
+    </section>
+    <section id="cv">
+      <h2>Mon CV</h2>
+      <a class="btn-cv" href="cv-emma-cassel.pdf" download>Télécharger mon CV</a>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <form id="contactForm">
+        <label>Nom :<input type="text" name="name" required></label>
+        <label>Email :<input type="email" name="email" required></label>
+        <label>Message :<textarea name="message" required></textarea></label>
+        <button type="submit">Envoyer</button>
+      </form>
+      <div class="form-message" id="formMessage"></div>
+      <ul class="social">
+        <li><a href="mailto:emma@email.com">Email</a></li>
+        <li><a href="https://linkedin.com/in/emmacassel" target="_blank">LinkedIn</a></li>
+        <!-- Ajoute d’autres liens si besoin -->
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Emma Cassel</p>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes musiques — Silent Hill Vibes 🌫️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="overlay"></div> <!-- Brume sombre sur le fond -->
+
+    <header>
+        <h1>mes musiques preferées 🎶</h1>
+        <p></p>
+    </header>
+
+    <section class="intro">
+        <h2>Ambiance de tous les jours </h2>
+                    backface-visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+        .card-front {
+            background-color: #333;
+        }
+        .card-back {
+            background-color: #ff6666;
+            transform: rotateY(180deg);
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Connais-tu mes aliments préférés !!</h1>
+    <div class="grid" id="gameGrid"></div>
+    <div id="message"></div>
+
+    <script>
+        const aliments = ["Fraise", "Nutella", "Saumon", "Jus d'orange", "Poire", "Clémentine"];
+        let cardsArray = [...aliments, ...aliments]; // On double pour les paires
+        let firstCard = null;
+        let secondCard = null;
+        let lockBoard = false;
+        let matchedPairs = 0;
+
+        function shuffle(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
+
+        shuffle(cardsArray);
+
+        const grid = document.getElementById('gameGrid');
+
+        cardsArray.forEach((aliment) => {
+            const card = document.createElement('div');
+            card.className = 'card';
+            card.dataset.aliment = aliment;
+          <body>
+
+    <h1 class="titre-ancien"></h1>
+    <h2 class="sous-titre-ancien"</h2>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connais-tu mes aliments préférés !!</title>
+
+    <!-- Déclaration de la police Ocean Delight -->
+    <style>
+        @font-face {
+            font-family: 'Ocean Delight';
+            src: url('fonts/OceanDelight.woff2') format('woff2'),
+                 url('fonts/OceanDelight.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* Appliquer la police à tout le site */
+        body {
+            font-family: 'Ocean Delight', cursive, sans-serif;
+            background-color: #fdf6e3; /* couleur papier ancien */
+            color: #333333;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        /* Styles titre et sous-titre */
+        h1 {
+            font-size: 60px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 28px;
+            font-style: italic;
+                          return;
+            }
+
+            secondCard = this;
+            lockBoard = true;
+
+            checkForMatch();
+        }
+
+        function checkForMatch() {
+            const isMatch = firstCard.dataset.aliment === secondCard.dataset.aliment;
+
+            if (isMatch) {
+                matchedPairs++;
+                resetBoard();
+                if (matchedPairs === aliments.length) {
+                    document.getElementById('message').textContent = "🎉 Bravo ! Tu connais tous mes aliments préférés !";
+                }
+            } else {
+                setTimeout(() => {
+                    firstCard.classList.remove('flipped');
+                    secondCard.classList.remove('flipped');
+                    resetBoard();
+                }, 1000);
+            }
+        }
+
+        function resetBoard() {
+            [firstCard, secondCard, lockBoard] = [null, null, false];
+        }
+    </script>
+
+</body>
+</html>
+          
