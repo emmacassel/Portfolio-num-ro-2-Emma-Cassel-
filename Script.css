@@ -1,0 +1,58 @@
+:root {
+  -:-main-bg: #f8f4fe;
+  --accent: #ae7ffb;
+  --accent-light: #ece0ff;
+  --text-dark: #3e3557;
+  --text-accent: #ae7ffb;
+  --btn-bg: #ae7ffb;
+  --btn-txt: #fff;
+}
+
+body {
+  font-family: 'reverse vintage',cursive;
+  margin: 0;
+  background: var(--main-bg);
+  color: var(--text-dark);
+}
+
+header {
+  background: var(--accent-light);
+  padding: 2em 0 1em 0;
+  box-shadow: 0 2px 8px #e1def9;
+  text-align: center;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.profile .avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 20px #dcc5fc;
+  margin-bottom: 1em;
+}
+
+.profile h1 {
+  margin: 0.2em 0 0 0;
+  font-size: 2.3em;
+}
+
+.subtitle {
+  color: var(--accent);
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.intro {
+  margin: 1em 0;
+  font-size: 1.15em;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  background: transparent;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.4em 0;
